@@ -1,5 +1,3 @@
-# VPC-Creation-using-Terraform
-#Created VPC using terraform 
 terraform {
     required_providers {
       aws = {
@@ -178,23 +176,3 @@ terraform {
       Name = "myinstance02"
     }
   }
-#Usage
-# Initialize Terraform:
-terraform init
-# Review the plan:
-terraform plan
-# Apply the configuration:
-terraform apply
-# Cleanup 
-To destroy the created resources, run:
-terraform destroy
-Confirm by typing yes when prompted.
-# Resources Created
-VPC with CIDR block 10.0.0.0/16.
-Public and private subnets in different availability zones.
-Internet and NAT gateways.
-Routing tables for public and private subnets.
-Security groups for public and private instances.
-Instances in public and private subnets.
-# Variables
-You can customize the VPC configuration by adjusting variables in the main.tf file or by using variable files.
